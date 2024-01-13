@@ -1,0 +1,313 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    height: 100vh;
+}
+#container{
+    width:100%;
+    height: 100%;
+    /* background-image: url("Check Weather.png"); */
+    background-color: rgb(73, 119, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstbox{
+    width:30%;
+    height:250px;
+    border-radius: 20px;
+    border:1px solid black;
+    background: rgba(255, 255, 255, 0.5);
+    /* z-index: -1; */
+    display: flex;
+    flex-flow:column;
+    justify-content: space-around;
+    align-items: center;
+    /* filter: blur(2px); */
+    /* -webkit-filter: blur(8px); */
+}
+
+#firstbox p{
+    font-size:2.8rem;
+    font-family:'Comic Sans MS';
+    text-align: center;
+}
+
+#firstbox button{
+    width:140px;
+    height:50px;
+    font-size:1.2rem;
+    font-family:'Comic Sans MS';
+    border-radius: 20px;
+    border: 2px solid rgb(5, 147, 147);
+    background-color: rgb(5, 147, 147);
+}
+
+#firstbox button:hover,#secondbox button:hover, #thirdbox button:hover{
+    opacity: 0.7;
+    border: 2px solid rgb(200, 197, 197);
+}
+
+
+#secondbox{
+    width:20%;
+    height:350px;
+    border-radius: 20px;
+    border:1px solid black;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow:column;
+    /* justify-content: space-around; */
+    align-items: center;
+    display: none;
+    /* visibility: hidden; */
+}
+
+#secondbox p{
+    font-size:1.8rem;
+    font-family:'Comic Sans MS';
+    text-align: center;
+    padding:15px 2px 1px 2px;
+}
+
+#secondbox  hr {
+    width: 80%; 
+    margin: 20px auto;
+    border: 1px solid #000; 
+}
+
+#secondbox input{
+    width:250px;
+    height:40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Comic Sans MS';
+    border:2px solid white;
+    margin:15px 2px 15px 2px;
+}
+
+#secondbox  #hr2 {
+    width: 80%; 
+    /* margin: 20px auto; */
+    border: 1px solid #000; 
+}
+
+#secondbox button{
+    width:250px;
+    height:40px;
+    font-size:1rem;
+    font-family:'Comic Sans MS';
+    border-radius: 10px;
+    border:1px solid white;
+    margin:12px 2px 15px 2px;
+}
+
+#thirdbox{
+    width:25%;
+    height:440px;
+    border-radius: 20px;
+    border:1px solid black;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow:column;
+    /* justify-content: space-around; */
+    align-items: center;
+    display:none;
+}
+
+#thirdbox #logonhdng{
+    width:100%;
+    height:70px;
+    /* background-color: blue; */
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+#logonhdng button{
+    width:30px;
+    height:30px;
+    border-radius: 10px;
+    margin:15px 10px 10px 20px; 
+}
+
+#logonhdng p{
+    font-size:1.8rem;
+    font-family:'Comic Sans MS';
+    text-align: center;
+    /* margin:10px 2px 1px 2px; */
+}
+
+#thirdbox hr{
+    width: 100%; 
+    margin: 0px auto;
+    border: 1px solid #000; 
+}
+
+#thirdbox #animation{
+    width:29%;
+    height:112px;
+    border: 1px solid black;
+    margin:30px auto 10px auto;
+    border-radius: 10px;
+}
+
+#animation video{
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+}
+
+#thirdbox #temperature{
+    font-size: 2.8rem;
+    font-family:'Comic Sans MS';
+    text-align: center;
+    margin:6px auto;
+}
+
+#thirdbox .info{
+    font-size: 1rem;
+    font-family:'Comic Sans MS';
+    text-align: center;
+    margin:1px auto;
+}
+
+#thirdbox #footer{
+    width:100%;
+    height: 68px;
+    border:1px solid black;
+    margin:40px 0px 0px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+#thirdbox #vertical-separator{
+    height:66.5px;
+    border-left:2px solid black;
+}
+#leftbox, #rightbox{
+    width:auto;
+    display:flex;
+    align-items: center;
+    margin:0px 40px 0px 40px;
+}
+
+#rightbox #left1 img{
+    width: 37px;
+    height: 37px;
+}
+
+#left1 img{
+    width:40px;
+    height:40px;
+}
+#left2 p{
+    font-size: 0.9rem;
+    font-family:'Comic Sans MS';
+    text-align: center;
+}
+
+
+.makeitvisible{
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.animation{
+    animation: popUp 0.5s ease forwards;
+}
+
+.reverseanimation {
+    animation: popIn 0.5s ease forwards;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideFromLeft {
+
+    0% {
+        opacity: 0;
+        transform: auto;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+
+
+
+@media (max-width: 1081px) {
+    #firstbox, #secondbox, #thirdbox {
+        width: 90%;
+        max-width: none;
+        height: auto;
+    }
+
+    #firstbox, #secondbox, #thirdbox p {
+        font-size: 1.5rem;
+    }
+
+    #firstbox button, #secondbox button, #thirdbox button {
+        font-size: 0.8rem;
+        width: auto;
+    }
+
+    #secondbox input {
+        font-size: auto;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    #secondbox p {
+        font-size: 1.2rem;
+    }
+
+    #secondbox hr,
+    #secondbox input,
+    #secondbox #hr2,
+    #thirdbox #logonhdng,
+    #thirdbox #footer,
+    #thirdbox #vertical-separator {
+        max-width: none;
+    }
+}
+
+/* @me */

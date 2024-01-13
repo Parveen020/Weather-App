@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="weather.png" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <div id="firstbox">
+            <p>Have you check today's weather?</p>
+            <button id="firstboxbtn">Check Here!</button>
+            
+        </div>
+        <div id="secondbox">
+            <p>Don't worry!</p>
+            <p>Just fill details.</p>
+            <hr>
+            <input type="text" id="yourCity" placeholder="Enter city name" required>
+            <hr id="hr2">
+            <button id="secondboxbtn" for="yourCity">Get Device Location</button>
+        </div>
+        <div id="thirdbox">
+            <div id="logonhdng">
+                <button id="backlogo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z"/></svg>
+                </button>
+                <p>Hurray! You did it.</p>
+            </div>
+            <hr>
+            <div id="animation">
+                <video src="cloudy.mp4" autoplay loop></video>
+            </div>
+            <p id="temperature">13° C</p>
+            <p id="status" class="info">Clowdy</p>
+            <p id="place" class="info">Kathmandu, Nepal</p>
+            <div id="footer">
+                <div id="leftbox">
+                    <div id="left1">
+                        <img src="thermometer.png" alt="Thermometer">
+                    </div>
+                    <div id="left2">
+                        <p id="feels-like">Feels Like: 17°C</p>
+                    </div>
+                </div>
+                <div id="vertical-separator"></div>
+                <div id="rightbox">
+                    <div id="left1">
+                        <img src="humidity.png" alt="Thermometer">
+                    </div>
+                    <div id="left2">
+                        <p id="humidity">Humidity: 84%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <input type="text" id="yourCity" placeholder="Enter city name">
+            <hr id="hr2">
+            <button>Get Device Location</button> -->
+        </div>
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
